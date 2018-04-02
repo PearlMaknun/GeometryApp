@@ -59,7 +59,7 @@ public class LingkaranActivity extends AppCompatActivity {
         //rumus keliling lingkaran
         float k = 0;
         r = Float.parseFloat(etjari2.getText().toString());
-        k = 4 * r * phi;
+        k = 2 * r * phi;
         return k;
     }
 
@@ -67,7 +67,7 @@ public class LingkaranActivity extends AppCompatActivity {
         //rumus luas lingkaran
         float l = 0;
         r = Float.parseFloat(etjari2.getText().toString());
-        l = 2 * r * phi;
+        l = r * r * phi;
         return l;
     }
 

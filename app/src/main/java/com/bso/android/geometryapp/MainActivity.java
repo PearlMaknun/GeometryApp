@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void segitiga(View v){
-        Intent intent = new Intent(MainActivity.this, SegitigaActivity.class);
+        Intent intent = new Intent(MainActivity.this, SegitigaSikusikuActivity.class);
         startActivity(intent);
     }
 

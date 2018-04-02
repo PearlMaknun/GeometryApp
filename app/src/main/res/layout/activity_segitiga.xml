@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.bso.android.geometryapp.SegitigaActivity">
+    tools:context="com.bso.android.geometryapp.SegitigaSikusikuActivity">
 
     <TextView
         android:text="@string/segitiga"
@@ -55,6 +55,17 @@
 
     <EditText
         android:id="@+id/et_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="tinggi"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/et_garing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"

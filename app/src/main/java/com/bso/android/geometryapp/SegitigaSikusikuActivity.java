@@ -9,12 +9,12 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SegitigaActivity extends AppCompatActivity {
+public class SegitigaSikusikuActivity extends AppCompatActivity {
 
     RadioButton rbkeliling, rbluas;
     Button btnhasil;
     TextView tvhasil;
-    EditText etalas, ettinggi;
+    EditText etalas, ettinggi, etgaring;
     public float alas = 0;
     public float tinggi = 0;
     public float hasil = 0;
@@ -29,6 +29,7 @@ public class SegitigaActivity extends AppCompatActivity {
         rbluas = findViewById(R.id.rb_luas);
         etalas = findViewById(R.id.et_alas);
         ettinggi = findViewById(R.id.et_tinggi);
+        etgaring = findViewById(R.id.et_garing);
         btnhasil = findViewById(R.id.btn_hasil);
         tvhasil = findViewById(R.id.tv_hasil);
 
@@ -42,10 +43,12 @@ public class SegitigaActivity extends AppCompatActivity {
             case R.id.rb_keliling:
                 if (checked)
                     pilihan = 0;
+                    etgaring.setEnabled(true);
                 break;
             case R.id.rb_luas:
                 if (checked)
                     pilihan = 1;
+                    etgaring.setEnabled(false);
                 break;
             default:
                 displayToast("Pastikan kamu sudah mengisi kolom sisi!");

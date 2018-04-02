@@ -22,7 +22,7 @@
             android:label="@string/persegi_panjang"/>
         <activity android:name=".LingkaranActivity"
             android:label="@string/lingkaran"/>
-        <activity android:name=".SegitigaActivity"
+        <activity android:name=".SegitigaSikusikuActivity"
             android:label="@string/segitiga"></activity>
     </application>
 
