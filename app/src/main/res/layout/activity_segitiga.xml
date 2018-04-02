@@ -69,14 +69,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:hint="tinggi"
+        android:hint="sisi miring"
         android:textSize="30sp"
         android:padding="20dp"
         android:textAlignment="center"
         />
 
     <Button
-        android:id="@+id/btn_hasil"
+        android:id="@+id/btn_hasi"
+        android:onClick="Hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HASIL"

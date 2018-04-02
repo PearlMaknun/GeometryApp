@@ -18,6 +18,7 @@ public class SegitigaSikusikuActivity extends AppCompatActivity {
     public float alas = 0;
     public float tinggi = 0;
     public float hasil = 0;
+    public float sisimiring = 0;
     public Integer pilihan = 0;
 
     @Override
@@ -61,7 +62,8 @@ public class SegitigaSikusikuActivity extends AppCompatActivity {
         float k = 0;
         alas = Float.parseFloat(etalas.getText().toString());
         tinggi = Float.parseFloat(ettinggi.getText().toString());
-        k = 0;
+        sisimiring = Float.parseFloat(ettinggi.getText().toString());
+        k = alas + tinggi + sisimiring;
         return k;
     }
 
@@ -86,8 +88,14 @@ public class SegitigaSikusikuActivity extends AppCompatActivity {
         else {
             switch (pilihan){
                 case 0:
-                    hasil = keliling();
-                    tvhasil.setText(""+hasil+ " cm");
+                    if(etgaring.getText().toString().equals("")){
+                        displayToast("Pastikan kamu sudah mengisi kolom alas, tinggi dan sisi miring!");
+                        tvhasil.setText("Tidak Diketahui");
+                    }
+                    else {
+                        hasil = keliling();
+                        tvhasil.setText("" + hasil + " cm");
+                    }
                     break;
                 case 1:
                     hasil = luas();
