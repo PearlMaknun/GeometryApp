@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bso.android.geometryapp.PersegiPanjangActivity">
+
+    <TextView
+        android:text="@string/persegi_panjang"
+        android:textColor="@color/putih"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_keliling"
+            android:onClick="Pilih"
+            android:checked="true"
+            android:text="@string/keliling"
+            android:layout_marginLeft="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_luas"
+            android:onClick="Pilih"
+            android:text="@string/luas"
+            android:layout_marginLeft="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="panjang"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/et_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="lebar"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:onClick="Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textAlignment="center" />
+
+</LinearLayout>
